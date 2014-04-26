@@ -22,6 +22,7 @@ var TableHideID = document.getElementById("TableHide");
 var MessageBoxScrollDiv = document.getElementById("Message-BoxScroll");
 var Speaker1Div = document.getElementById("Speaker1");
 var Speaker2Div = document.getElementById("Speaker2");
+var BeginDiv =document.getElementById("Beginning");
 
 //declare arrays
 var AllBackgroundElements = new Array(); // elements that will stay at the same height
@@ -45,6 +46,7 @@ var MessageBoxPosition = 3000; //position when MessageBoard appears
 // direction is the direction Phil is facing
 var direction = false
 var counter = 0 // the counter that prevents ultrarapid animations of Phil
+var begin = 0;
 
 window.onload = function()
 {
@@ -55,10 +57,13 @@ window.onload = function()
 	ShiftElements();
 	DilloLights();
 	SpeakerAnimation();
+	InstructionText();
 }
 
 window.onscroll = function (event)
 {
+	begin = 1;
+	InstructionText();
 	DetectPageVerticalPosition();
 	DisplayQuotes();
 	ShiftElements();
@@ -310,4 +315,15 @@ function SpeakerAnimation()
 			Speaker2Div.style.display="none";
 		}
 	}, 500);
+}
+
+function InstructionText()
+{
+	if (begin==0){
+
+		BeginDiv.style.display="initial";
+	}
+	else{
+		BeginDiv.style.display="none";
+	}
 }

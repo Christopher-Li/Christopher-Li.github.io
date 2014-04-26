@@ -1,3 +1,16 @@
+#Beginning{
+	height: 100px;
+	width:500px;
+	text-align: auto;
+	font-family: 'Dosis', 'sans-serif';
+	font-size:28px;
+	color:white;
+	position: absolute;
+	top: 550px;
+	left: 400px;
+	z-index:7;
+}
+
 body{
 	background-color: rgb(39,170,225);
 }
