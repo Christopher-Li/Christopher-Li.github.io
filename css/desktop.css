@@ -1,0 +1,203 @@
+body{
+	background-color: rgb(39,170,225);
+}
+
+.SizeCoverPosition{
+	height:800px;
+	width: 4000px;
+	background-size: cover;
+	position: absolute;
+	left: 0px;
+	top:0px;
+}
+
+#Background{
+	height: 4000px;
+	width: 100%;
+	position:absolute;
+	left:0;
+	top:0;
+	overflow: hidden;
+}
+
+#BackgroundBuildings{
+	background-image: url("../img/background.png");
+	z-index:0;
+}
+
+#Banner1{
+	background-image: url("../img/banner1.png");
+	z-index:10;
+}
+
+#Banner2{
+	background-image: url("../img/banner2.png");
+	top: -500px;
+	z-index:10;
+}
+
+#Banner3{
+	background-image: url("../img/banner3.png");
+	top: -500px;
+	z-index:10;
+}
+
+#Grass1{
+	background-image: url("../img/grass1.png");
+	z-index:2;
+}
+
+#Grass2{
+	background-image: url("../img/grass2.png");
+	z-index:1;
+}
+
+#Cloud1{
+	background-image: url("../img/cloudWhite.png");
+	z-index:-1;
+}
+
+#Cloud2{
+	background-image: url("../img/cloudGrey.png");
+	z-index:-2;
+}
+
+#People1{
+	background-image: url("../img/people1.png");
+	z-index:5;
+}
+
+#People2{
+	background-image: url("../img/people2.png");
+	z-index:3;
+}
+
+#Quote1{
+	background-image: url("../img/quotes1.png");
+	z-index:6;
+	display:none;
+}
+
+#Quote2{
+	background-image: url("../img/quotes2.png");
+	z-index:7;
+	display:none;
+}
+
+#Quote3{
+	background-image: url("../img/quotes3.png");
+	z-index:8;
+	display:none;
+}
+
+#Dillo1{
+	background-image: url("../img/dillo.png");
+	z-index:3;
+}
+
+#Dillo2{
+	background-image: url("../img/dillo2.png");
+	z-index:4;
+	display:none;
+}
+
+#Dillo3{
+	background-image: url("../img/dillo3.png");
+	z-index:4;
+	display:initial;
+}
+
+#Speaker1{
+	background-image: url("../img/speaker1.png");
+	z-index:1;
+	display:none;
+}
+
+#Speaker2{
+	background-image: url("../img/speaker2.png");
+	z-index:1;
+	display:initial;
+}
+#Phil{
+	width:300px;
+	height:300px;
+	top: 140px;
+	position:fixed;
+	overflow:hidden;
+	z-index:4;
+}
+
+#PhilSlides{
+	height:600px;
+	width:3000px;
+	background-size:cover;
+	position: relative;
+	background-image: url("../img/phil.png");
+	left: 0px;
+	top: 0px;
+}
+
+#MessageBoard{
+	height: 4000px;
+	width: 100%;
+	position:absolute;
+	left:0;
+	top:0;
+	overflow: hidden;
+	z-index:9;
+}
+
+#MessageBox{
+	border: 30px solid #555555;
+	border-top: 30px solid #777777;
+	border-bottom: transparent;
+	text-align: center;
+	height: 700px;
+	width: 600px;
+	position:absolute;
+	background-color: #222222;
+	padding: 30px;
+	color: #dddddd;
+	font-family: 'Dosis', 'sans-serif';
+	overflow:hidden;
+	top: 1600px;
+}
+
+h1{
+	font-size: 40px;
+}
+
+#Message-BoxScroll{
+	overflow-y:hidden;
+	overflow-x:hidden;
+	width:100%;
+	height:450px;
+}
+
+p, #prompt{
+	font-size:28px;
+}
+
+table{
+	padding:30px;
+}
+
+input{
+	background-color: #222222;
+	font-family: 'Dosis', 'sans-serif';
+	font-size: 28px;
+	color:#dddddd;
+	text-align:center;
+
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#333333;
+}
+
+button{
+	font-size:25px;
+	font-family: 'Dosis', 'sans-serif';
+	background-color: #222222;
+	color:#dddddd;
+}
