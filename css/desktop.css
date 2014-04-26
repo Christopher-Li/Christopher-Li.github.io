@@ -174,7 +174,7 @@ h1{
 	height:450px;
 }
 
-p, #prompt{
+p, .prompt{
 	font-size:28px;
 }
 
