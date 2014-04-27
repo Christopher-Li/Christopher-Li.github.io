@@ -283,16 +283,8 @@ function DilloLights()
 }
 
 $('button').click(function() {
-	StoreData();
 	HideFields();
 });
-
-function StoreData()
-{
-	userData.push($('#userReason').val());
-	userData.push($('#userName').val());
-	$('.prompt').html("\""+ userData[0] + "\" -" + userData[1]);
-}
 
 function HideFields()
 {
