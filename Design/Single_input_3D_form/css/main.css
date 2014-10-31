@@ -1,0 +1,70 @@
+@import url('http://fonts.googleapis.com/css?family=Sniglet');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	/*background: #C2FF7C;*/
+	background: -webkit-linear-gradient(#A1D467, #C2FF7C); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#A1D467, #C2FF7C); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#A1D467, #C2FF7C); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#A1D467, #C2FF7C); /* Standard syntax */
+	text-align: center;
+	padding: 150px;
+	font: normal 18px Sniglet;
+	color: white;
+}
+
+h1 {
+	color: black;
+}
+
+h3 {
+	margin-bottom: 50px;
+	color: black;
+}
+
+.fun-cube i {
+	transform: scale(10);
+	opacity: 0.1;
+	color: #FF7B75;
+}
+
+.cuboid-text {
+	line-height: 40px;
+	height: 40px;
+	background: #4EA332;
+}
+
+#cuboid {
+	width: 400px;
+	margin: 0 auto;
+	/*gives the cuboid 3D and makes it a containder for absoluate position descendants */
+	perspective: 1000px; 
+}
+
+#email {
+	background: white; outline: none; border: 0 none;
+	font: inherit; text-align: left;
+	width: 100%; padding: 0 10px;
+}
+
+#submit {display: none;}
+
+.submit-icon, .reset-icon{
+	position: absolute; top: 0; right: 0;
+	height: 100%;
+	color: rgba(0,0,0,0.25);
+	line-height: 40px; padding: 0 10px;
+}
+
+.fa-chevron-right, .fa-refresh {
+	line-height: 40px;
+}
+
+/*when user is typing*/
+.submit-icon.active{color: rgba(255,255,255,0.25);}
+
+#cuboid div{position:relative;}
